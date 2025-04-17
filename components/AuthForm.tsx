@@ -58,7 +58,7 @@ export default function AuthForm({ type }: { type: FormType }) {
         });
 
         if (!result?.success) {
-          toast.error("Failed to create account. Please try again.");
+          toast.error(result?.message);
           return;
         }
 
